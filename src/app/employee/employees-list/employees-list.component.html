@@ -1,0 +1,18 @@
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Contect</th>
+    </tr>
+    <tr *ngFor="let item of this.service.dataList">
+        <td (click)="populateData(item)">[{{item.empCode}}]-{{item.empName}}</td>
+        <td (click)="populateData(item)">{{item.postion}}</td>
+        <td (click)="populateData(item)">{{item.empMobile}}</td>
+        <td>
+            
+        <i class="fas fa-edit"  (click)="populateData(item)"  aria-hidden="true" style="color: blue;">  Edit</i>&nbsp;
+            <i class="fa fa-trash" (click)="removeData(item)" aria-hidden="true" style="color: blue;"></i>
+        
+        </td>
+    </tr>
+</table>

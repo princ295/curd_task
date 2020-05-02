@@ -1,0 +1,10 @@
+          
+//           <div class="validation-error" *ngIf="empcontect.touched && empcontect.invalid">This Field requried</div>
+//           input.ng-touched.ng-invalid {
+//    border-color: red;
+// }
+
+
+input[type]{
+    font-weight: bold;
+}

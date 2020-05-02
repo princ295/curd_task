@@ -1,0 +1,45 @@
+
+
+<form #form="ngForm" (submit)="submitAction(form)">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group input-group-sm mb-3">
+            <input type="hidden" class="form-control" aria-label="Sizing example input" 
+             name="pk" #empId="ngModel" [(ngModel)]="service.formData.pk" aria-describedby="inputGroup-sizing-sm" placeholder="Your Name">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input"  name="empName" #empName="ngModel" [(ngModel)]="service.formData.empName" aria-describedby="inputGroup-sizing-sm" placeholder="Your Name">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input"   name="empMobile" #empMobile="ngModel" [(ngModel)]="service.formData.empMobile"  aria-describedby="inputGroup-sizing-sm" placeholder="Contenct Number">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+              </div>
+            <input type="text" class="form-control" aria-label="Sizing example input"  name="empEmail" #empEmail="ngModel" [(ngModel)]="service.formData.empEmail"   aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+         <div class="col-md-12">
+            <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"   name="postion" #postion="ngModel" [(ngModel)]="service.formData.postion" placeholder="Designation Ex. Devloper">
+            </div>
+        </div>
+         <div class="col-md-12">
+            <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" placeholder="Code ID">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
+        </div>
+    </div>
+</form>
+
